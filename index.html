@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brew & Bean</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Brew & Bean</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Welcome to Brew & Bean – Your perfect coffee companion!</h1>
+      <a href="#learn"><button class="button">Learn More</button></a>
+    </div>
+  </section>
+
+  <section class="menu">
+    <h2>Today's Brews</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <h3>Espresso</h3>
+        <p>$3</p>
+      </div>
+      <div class="menu-item">
+        <h3>Latte</h3>
+        <p>$4</p>
+      </div>
+      <div class="menu-item">
+        <h3>Cappuccino</h3>
+        <p>$3.5</p>
+      </div>
+      <div class="menu-item">
+        <h3>Cold-Coffee</h3>
+        <p>$4.5</p>
+      </div>
+      <div class="menu-item">
+        <h3>Espresso</h3>
+        <p>$5</p>
+      </div>
+      <div class="menu-item">
+        <h3>Affogato</h3>
+        <p>$5.5</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="learn" class="about">
+    <h2>About Us</h2>
+    <div class="about-content">
+      <p><strong>Brew and Bean:</strong> where every cup is crafted with passion, <br/>community, and the finest beans from around the world.<br/> From the bean to your cup, our mission is to create <br/>a warm and welcoming space for all coffee lovers.</p>
+      <img src="./coffee-img.jpg" alt="Coffee shop image">
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="return validateForm(event)">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <input id="message" name="message" required></input>
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="thankyou" style="display: none; color: green; font-weight: bold;">Thank you.</p>
+  </section>
+
+  <footer>
+    <p>Follow us on:</p>
+    <ul class="social">
+      <li>Facebook</li>
+      <img class="icon" src="./facebook.png" alt="Facebook logo"/>
+      <li>Instagram</li>
+      <img class="icon" src="./instagram.png" alt="Instagram logo"/>
+      <li>Twitter</li>
+      <img class="icon" src="./twitter.png" alt="Twitter logo"/>
+    </ul>
+    <p style="margin-top: 10px;">&copy; 2024 Brew & Bean. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
